@@ -6,8 +6,7 @@ public class TerningeKast {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        Die die1 = new Die();
-        Die die2 = new Die();
+
         int sum1;
         int sum2;
         int point1 = 0;
