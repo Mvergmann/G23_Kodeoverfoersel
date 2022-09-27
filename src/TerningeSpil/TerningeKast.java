@@ -23,6 +23,8 @@ public class TerningeKast {
 
         while (point1 < 40 && point2 < 40) {
 
+            System.out.println(spiller1 + " Tryk enter for at kaste tegningerne");
+            Input.enter();
 
             System.out.println(spiller1 + " kaster terningerne");
             kastsp1.tur();
@@ -30,16 +32,21 @@ public class TerningeKast {
             System.out.println("du har slået " + kastsp1.getDie1Value() + " og " + kastsp1.getDie2Value());
             point1 += sum1;
             System.out.println("du har nu: " + point1 + " point.");
+            System.out.println("");
 
-            }
+            System.out.println(spiller2 + " Tryk enter for at kaste tegningerne");
+            Input.enter();
+
+
             System.out.println(spiller2 + " kaster terningerne");
             kastsp2.tur();
             sum2 = kastsp2.sum;
             System.out.println("du har slået " + kastsp2.getDie1Value() + " og " + kastsp2.getDie2Value());
             point2 += sum2;
             System.out.println("du har nu: " + point2 + " point");
-
-        if (point1 > 40) {
+            System.out.println("");
+        }
+        if (point1 >= 40) {
             System.out.println(spiller1 + " har vundet!");
             System.out.println("Scoren blev: " + spiller1 + " point og " + spiller2 + " point");
         } else {
