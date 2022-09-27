@@ -68,6 +68,8 @@ public class TestAfTerning {
             }
 
         }
+        float a = sum2;
+
         System.out.println("Der blevet slået 2 ens: " + toens + " gange");
         System.out.println("Der blevet slået 2: " + sum2 + " gange");
         System.out.println("Der blevet slået 3: " + sum3 + " gange");
@@ -80,5 +82,7 @@ public class TestAfTerning {
         System.out.println("Der blevet slået 10: " + sum10 + " gange");
         System.out.println("Der blevet slået 11: " + sum11 + " gange");
         System.out.println("Der blevet slået 12: " + sum12 + " gange");
+
+        System.out.println("Der er: "+((a/10000)*100)+"% chance for at slå to 1'er ");
     }
 }
