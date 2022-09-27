@@ -14,8 +14,6 @@ public class TerningeKast {
         int point2 = 0;
         Tur kastsp1 = new Tur();
         Tur kastsp2 = new Tur();
-        boolean turA = false;
-        boolean turB = false;
 
 
         System.out.println("Skriv navnet på spiller 1: ");
@@ -26,28 +24,13 @@ public class TerningeKast {
 
         while (point1 < 40 && point2 < 40) {
 
-            if (turA == true && turB == true) {
-                System.out.println(spiller1 + " har vundet!");
-                break;
-            }
+
             System.out.println(spiller1 + " kaster terningerne");
             kastsp1.tur();
             sum1 = kastsp1.sum;
             System.out.println("du har slået " + kastsp1.getDie1Value() + " og " + kastsp1.getDie2Value());
             point1 += sum1;
             System.out.println("du har nu: " + point1 + " point.");
-
-            if (sum1 == 12){
-                turA = true;
-            }
-            else {
-                turA = false;
-            }
-
-            if (turA == true && turB == true) {
-                System.out.println(spiller1 + " har vundet!");
-                break;
-            }
 
             if (kastsp1.getDie1Value() == 1 && kastsp1.getDie2Value() == 1){
                 System.out.println("Du har slået to, 1'ere og mister alle dine point");
@@ -62,17 +45,7 @@ public class TerningeKast {
                 System.out.println("du har slået " + kastsp1.getDie1Value() + " og " + kastsp1.getDie2Value());
                 point1 += sum1;
                 System.out.println("du har nu: " + point1 + " point.");
-                if (sum1 == 12) {
-                    turB = true;
-                } else {
-                    turB = false;
-                }
-                if (turA == true && turB == true) {
 
-                    System.out.println(spiller1 + " har vundet!");
-                    break;
-
-                }
             }
             System.out.println(spiller2 + " kaster terningerne");
             kastsp2.tur();
