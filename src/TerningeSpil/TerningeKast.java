@@ -42,7 +42,10 @@ public class TerningeKast {
             System.out.println(spiller2 + " Tryk enter for at kaste tegningerne");
             Input.enter();
             // Input statemnt for at spillet ikke forsætter uden player input.
-
+            if(point1>=40)
+            {
+                break;
+            }
             System.out.println(spiller2 + " kaster terningerne");
             kastsp2.tur();
             sum2 = kastsp2.sum;
