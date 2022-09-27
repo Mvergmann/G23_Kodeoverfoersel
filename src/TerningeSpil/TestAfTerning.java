@@ -26,6 +26,7 @@ public class TestAfTerning {
 
 
         for (antGang = 0; antGang < 10000; antGang++) {
+            //for loopet roller terningen ti tusind gange for at bedømme om slagende er "Random"
             die1.roll();
             die2.roll();
             System.out.println(die1.getFaceValue() + die2.getFaceValue());
@@ -66,10 +67,11 @@ public class TestAfTerning {
             if(die1.getFaceValue() + die2.getFaceValue()==12){
                 sum12++;
             }
-
+            // Disse if statements bruges til at tælle antalt af indstanser af forskellige resultater af terning slag
         }
         float a = sum2;
         float b = toens;
+        //Laver sum2 og toens til nye variabler af type float. (int kan ikke give decimal tal og ville derfor give 0 når vi regner procent %
         System.out.println("Der blevet slået 2 ens: " + toens + " gange");
         System.out.println("Der blevet slået 2: " + sum2 + " gange");
         System.out.println("Der blevet slået 3: " + sum3 + " gange");
@@ -82,9 +84,11 @@ public class TestAfTerning {
         System.out.println("Der blevet slået 10: " + sum10 + " gange");
         System.out.println("Der blevet slået 11: " + sum11 + " gange");
         System.out.println("Der blevet slået 12: " + sum12 + " gange");
+        //Printer antalt af sum med forskellige værdier
+
 
         System.out.println("Der er: "+((a/10000)*100)+"% chance for at slå to 1'er ");
         System.out.println("Der er: "+((b/10000)*100)+"% chance for at slå to ens ");
-
+        // regner og printer procent chancen for at terningen slår henholdstvis to 1'er og to ens.
     }
 }
