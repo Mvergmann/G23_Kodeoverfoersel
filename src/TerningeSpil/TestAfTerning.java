@@ -22,10 +22,11 @@ public class TestAfTerning {
          Her definineres en række variable af type int som bruges til at tælle antal gange tegningerne slår
          forskellige resultater
          */
+        System.out.println("Vælg antal terninger for testen: ");
+        int antal =Input.antalslag();
 
 
-
-        for (antGang = 0; antGang < 10000; antGang++) {
+        for (antGang = 0; antGang < antal; antGang++) {
             //for loopet roller terningen ti tusind gange for at bedømme om slagende er "Random"
             die1.roll();
             die2.roll();
@@ -87,8 +88,10 @@ public class TestAfTerning {
         //Printer antalt af sum med forskellige værdier
 
 
-        System.out.println("Der er: "+((a/10000)*100)+"% chance for at slå to 1'er ");
-        System.out.println("Der er: "+((b/10000)*100)+"% chance for at slå to ens ");
+        System.out.println("Der er: "+((a/antal)*100)+"% chance for at slå to 1'er ");
+        System.out.println("Der er: "+((b/antal)*100)+"% chance for at slå to ens ");
         // regner og printer procent chancen for at terningen slår henholdstvis to 1'er og to ens.
+
+        System.out.println("Terning er testet på " +antal+ " antal slag");
     }
 }
