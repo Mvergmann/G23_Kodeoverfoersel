@@ -17,7 +17,12 @@ public class Input {
             String name = in.nextLine();
             return name;
         }
-
+        public static int antalslag()
+        {
+            Scanner antal = new Scanner(System.in);
+            int testantal = antal.nextInt();
+            return testantal;
+        }
     }
 
 
