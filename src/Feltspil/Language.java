@@ -141,10 +141,6 @@ public class Language {
         return "has won the game";
     }
 
-    public static String player2victory(){
-        String vic2 = "Player 2 has won the game";
-        return vic2;
-    }
 
     public static String getYouRolled() {
         return YOU_ROLLED;
