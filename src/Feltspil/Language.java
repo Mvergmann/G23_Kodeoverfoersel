@@ -135,5 +135,12 @@ public class Language {
         String enter = " Press Enter to continue ";
         return enter;
     }
-
+    public static String player1victory(){
+        String vic1 = " Player 1 has won the game ";
+        return vic1;
+    }
+    public static String player2victory(){
+        String vic2 = "Player 2 has won the game";
+        return vic2;
+    }
 }
