@@ -17,7 +17,7 @@ public class main {
         System.out.println(Language.GetName2());
         String navn2 = scan.nextLine();
         Player player2 = new Player(navn2, STARTSALDO);
-        System.out.println(Language.getWelcome_to_the_game_() + player1.toString() + and() + player2.toString());
+        System.out.println(Language.getWelcome_to_the_game_() + player1.toString() + Language.and() + player2.toString());
         Turn p1tur = new Turn();
         Turn p2tur = new Turn();
         TileList Tlmain = new TileList();

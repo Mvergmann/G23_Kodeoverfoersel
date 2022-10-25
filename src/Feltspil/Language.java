@@ -129,7 +129,7 @@ public class Language {
         String extraturn = " The next day you wake up with renewed energy, you immediately take an extra turn ";
         return extraturn;
     }
-    public static String and(){
+    static String and(){
         String and = " and ";
         return and;
     }
