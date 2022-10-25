@@ -138,7 +138,7 @@ public class Language {
         return enter;
     }
     public static String victory(){
-        return "has won the game";
+        return " has won the game!";
     }
 
 
@@ -152,5 +152,13 @@ public class Language {
 
     static String GetName2() {
         return "Please enter the name of the second player: ";
+    }
+
+    static String getCongrats() {
+        return "congratulations ";
+    }
+
+    static String getYouWonWith() {
+        return "you won with ";
     }
 }

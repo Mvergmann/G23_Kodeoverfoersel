@@ -4,6 +4,8 @@ import TerningeSpil.Input;
 
 import java.util.Scanner;
 
+import static Feltspil.Language.victory;
+
 public class main {
 
     public static final int STARTSALDO = 1000;
@@ -27,7 +29,7 @@ public class main {
             System.out.println("it is " + navn1 + "'s turn, press enter to roll the dice");
             Input.enter();
             int roll1 = p1tur.tur();
-            System.out.println(Language.getYouRolled() + roll1);
+            System.out.println("You rolled " + roll1);
             System.out.println("You landed on the tile: " + Tlmain.getTitle(roll1));
             System.out.println(Tlmain.getFlavourText(roll1));
             System.out.println("You have gained " + Tlmain.getValue(roll1) + " points.");
@@ -37,7 +39,7 @@ public class main {
                 System.out.println(Langmain.extraturn());
                 Input.enter();
                 roll1 = p1tur.tur();
-                System.out.println(Language.YOU_ROLLED + roll1);
+                System.out.println("You rolled " + roll1);
                 System.out.println("You landed on the tile: " + Tlmain.getTitle(roll1));
                 System.out.println(Tlmain.getFlavourText(roll1));
                 System.out.println("You have gained " + Tlmain.getValue(roll1) + " points.");
@@ -49,7 +51,7 @@ public class main {
             System.out.println("it is " + navn2 + "'s turn, press enter to roll the dice");
             Input.enter();
             int roll2 = p2tur.tur();
-            System.out.println(Language.YOU_ROLLED + roll2);
+            System.out.println("You rolled " + roll2);
             System.out.println("You landed on the tile: " + Tlmain.getTitle(roll2));
             System.out.println(Tlmain.getFlavourText(roll2));
             System.out.println("You have gained " + Tlmain.getValue(roll2) + " points.");
@@ -60,7 +62,7 @@ public class main {
                 System.out.println(Langmain.extraturn());
                 Input.enter();
                 roll2 = p2tur.tur();
-                System.out.println(Language.YOU_ROLLED + roll2);
+                System.out.println("You rolled " + roll2);
                 System.out.println("You landed on the tile: " + Tlmain.getTitle(roll2));
                 System.out.println(Tlmain.getFlavourText(roll2));
                 System.out.println("You have gained " + Tlmain.getValue(roll2) + " points.");
@@ -71,14 +73,14 @@ public class main {
 
         }
         if (player1.GetSaldo() > player2.GetSaldo()) {
-            System.out.println("congratulations " + navn1 + " you have won the game");
+            System.out.println(Language.getCongrats() + navn1 + victory());
             int difference = player1.GetSaldo() - player2.GetSaldo();
-            System.out.println("you won with " + difference + " point");
+            System.out.println(Language.getYouWonWith() + difference + " point");
         }
         if (player2.GetSaldo() > player1.GetSaldo()) {
-            System.out.println("congratulations " + navn2 + " you have won the game");
+            System.out.println(Language.getCongrats() + navn2 + victory());
             int difference = player2.GetSaldo() - player1.GetSaldo();
-            System.out.println("you won with " + difference + " point");
+            System.out.println(Language.getYouWonWith() + difference + " point");
         }
     }
 
