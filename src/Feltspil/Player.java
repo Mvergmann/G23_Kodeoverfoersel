@@ -4,7 +4,7 @@ import javax.xml.namespace.QName;
 import java.util.Scanner;
 
 public class Player {
-    private int saldo = 0;
+    private int saldo = 1000;
 
     public String navn;
 
