@@ -131,5 +131,9 @@ public class Language {
         String and = " and ";
         return and;
     }
+    public static String enter(){
+        String enter = " Press Enter to continue ";
+        return enter;
+    }
 
 }
