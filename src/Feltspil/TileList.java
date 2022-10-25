@@ -10,9 +10,9 @@ public class TileList {
         public TileList() {
             Language lang = new Language();
 /**
- * Vi har her valgt at gøre såvel, at hvis man ønsker at ændre på sproget for spillet, så skal man blot ændre det i "language"-klassen
- * Dette er gjort såvel, at vi referer på klassen "language" ind til denne klasse "TileList"
- * Grunden til dette er for at simplicisere spillet, men også grundet at kunden ønsker at kunne ændre sproget for spillet.
+ * We have decided to do as following, if you wish to change the language of the game, you simply just have to change it in the class "Language"
+ * We have done it the way, where we refer to the class "Language" into this class "Tilelist"
+ * The reason behind this is to make the programming overlook more simple, on top of that the customer also wanted this is a requirement
  */
 
             liste = new Tile[11];
