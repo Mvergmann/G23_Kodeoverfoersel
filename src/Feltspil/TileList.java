@@ -9,6 +9,11 @@ public class TileList {
 
         public TileList() {
             Language lang = new Language();
+/**
+ * Vi har her valgt at gøre såvel, at hvis man ønsker at ændre på sproget for spillet, så skal man blot ændre det i "language"-klassen
+ * Dette er gjort såvel, at vi referer på klassen "language" ind til denne klasse "TileList"
+ * Grunden til dette er for at simplicisere spillet, men også grundet at kunden ønsker at kunne ændre sproget for spillet.
+ */
 
             liste = new Tile[11];
             liste[0] = new Tile(lang.title2(), lang.spacetext2(), 250);
