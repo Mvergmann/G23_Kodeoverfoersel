@@ -19,6 +19,13 @@ public class TileList {
         public int getValue(int i){
             return liste[i].getValue();
         }
+        public String getTitle(int i){
+            return liste[i].getTitle();
+
+        }
+        public String getFlavourText(int i){
+            return liste[i].getFlavourText();
+        }
 
     }
 
