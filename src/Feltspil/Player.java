@@ -12,7 +12,7 @@ public class Player {
         this.navn = n;
         this.saldo = s;
     }
-    public int GetSaldo (int saldo){
+    public int GetSaldo (){
         return this.saldo;
     }
 
