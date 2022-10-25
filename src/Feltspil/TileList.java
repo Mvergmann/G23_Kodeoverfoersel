@@ -22,6 +22,7 @@ public class TileList {
             liste[8] = new Tile(lang.title10(), lang.spacetext10(), -80);
             liste[9] = new Tile(lang.title11(), lang.spacetext11(), -50);
             liste[10] = new Tile(lang.title12(), lang.spacetext12(), 650);
+
         }
 
         public int getValue(int i){
