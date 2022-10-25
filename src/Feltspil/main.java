@@ -68,12 +68,12 @@ public class main {
 
         }
         if (player1.GetSaldo() > player2.GetSaldo()) {
-            System.out.println("tillykke " + navn1 + "du har vundet spillet");
+            System.out.println("tillykke " + navn1 + " du har vundet spillet");
             int difference = player1.GetSaldo() - player2.GetSaldo();
-            System.out.println("du vandt med" + difference + " point");
+            System.out.println("du vandt med " + difference + " point");
         }
         if (player2.GetSaldo() > player1.GetSaldo()) {
-            System.out.println("tillykke " + navn2 + "du har vundet spillet");
+            System.out.println("tillykke " + navn2 + " du har vundet spillet");
             int difference = player2.GetSaldo() - player1.GetSaldo();
             System.out.println("du vandt med" + difference + " point");
         }
