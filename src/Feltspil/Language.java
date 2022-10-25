@@ -157,4 +157,44 @@ public class Language {
     static String GetName2() {
         return "Please enter the name of the second player: ";
     }
+
+    static String getWelcome_to_the_game_() {
+        return "welcome to the game ";
+    }
+
+    static String You_Won_With() {
+        return "you won with ";
+    }
+
+    static String You_Have_Won_The_Game() {
+        return " you have won the game";
+    }
+
+    static String Congratulations() {
+        return "congratulations ";
+    }
+
+    static String Your_Total_Is_Now() {
+        return "Your total is now ";
+    }
+
+    static String Points() {
+        return " points.";
+    }
+
+    static String You_Have_Gained() {
+        return "You have gained ";
+    }
+
+    static String You_Landed_On_The_Tile() {
+        return "You landed on the tile: ";
+    }
+
+    static String S_Turn_Press_Enter_To_Roll_The_Dice() {
+        return "'s turn, press enter to roll the dice";
+    }
+
+    static String It_Is() {
+        return "it is ";
+    }
 }
