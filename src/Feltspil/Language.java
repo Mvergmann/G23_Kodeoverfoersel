@@ -6,11 +6,12 @@ public class Language {
 
     public Language(){
 
-    }
+    }//constructor for Language clas, dette gør at vi kan instanserer objekter af typen language senere i koden.
 
     /**
-     * System.out.println methods for the flavour text that is shown when a player lands on a certain space.
-     *
+     * Denne del af koden består af String's med title og flavour text til alle felterne i spillet.
+     * Disse objekter kan så kaldes i andre metoder hvor tekst skal printes.
+     * Altså er det kun denne class der skal regigeres i hvis spillet skal lokalisteres til andre sprog
      */
 
     public static String title2(){
@@ -104,7 +105,7 @@ public class Language {
     }
 
     /**
-     * Game start text methods
+     * De følgene metoder indeholder anden tekst da bruges forskellige steder i programmet.
      *
      */
     public static String welcome(){
