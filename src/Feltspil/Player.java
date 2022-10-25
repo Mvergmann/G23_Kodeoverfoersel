@@ -13,7 +13,7 @@ public class Player {
         this.saldo = s;
     }
     public int GetSaldo (int saldo){
-        return saldo;
+        return this.saldo;
     }
 
     public int AddToSaldo (int ammount){
