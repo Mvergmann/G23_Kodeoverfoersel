@@ -1,16 +1,12 @@
 package Feltspil;
 
-import javax.xml.namespace.QName;
-import java.util.Scanner;
-
 public class Player {
-    private int saldo = 1000;
-
+    private int saldo;
     public String navn;
 
-    public Player (String n, int s){
+    public Player (String n, int saldo){
         this.navn = n;
-        this.saldo = s;
+        this.saldo = saldo;
     }
     public int GetSaldo (){
         return this.saldo;

@@ -2,6 +2,8 @@ package Feltspil;
 
 public class Language {
 
+    public static final String YOU_ROLLED = "You rolled ";
+
     public Language(){
 
     }
@@ -142,5 +144,17 @@ public class Language {
     public static String player2victory(){
         String vic2 = "Player 2 has won the game";
         return vic2;
+    }
+
+    public static String getYouRolled() {
+        return YOU_ROLLED;
+    }
+
+    static String Getname1() {
+        return "Please enter the name of the first player: ";
+    }
+
+    static String GetName2() {
+        return "Please enter the name of the second player: ";
     }
 }

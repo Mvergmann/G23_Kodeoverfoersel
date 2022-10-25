@@ -5,15 +5,18 @@ import TerningeSpil.Input;
 import java.util.Scanner;
 
 public class main {
+
+    public static final int STARTSALDO = 1000;
+
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.println("welcome to the game");
-        System.out.println("Please enter the name of the first players: ");
+        System.out.println("welcome to the game ");
+        System.out.println(Language.Getname1());
         String navn1 = scan.nextLine();
-        Player player1 = new Player(navn1, 0);
-        System.out.println("Please enter the name of the first players: ");
+        Player player1 = new Player(navn1, STARTSALDO);
+        System.out.println(Language.GetName2());
         String navn2 = scan.nextLine();
-        Player player2 = new Player(navn2, 0);
+        Player player2 = new Player(navn2, STARTSALDO);
         System.out.println("welcome to the game " + player1.toString() + " and " + player2.toString());
         Turn p1tur = new Turn();
         Turn p2tur = new Turn();
@@ -24,7 +27,7 @@ public class main {
             System.out.println("it is " + navn1 + "'s turn, press enter to roll the dice");
             Input.enter();
             int roll1 = p1tur.tur();
-            System.out.println("You rolled " + roll1);
+            System.out.println(Language.getYouRolled() + roll1);
             System.out.println("You landed on the tile: " + Tlmain.getTitle(roll1));
             System.out.println(Tlmain.getFlavourText(roll1));
             System.out.println("You have gained " + Tlmain.getValue(roll1) + " points.");
@@ -34,7 +37,7 @@ public class main {
                 System.out.println(Langmain.extraturn());
                 Input.enter();
                 roll1 = p1tur.tur();
-                System.out.println("You rolled " + roll1);
+                System.out.println(Language.YOU_ROLLED + roll1);
                 System.out.println("You landed on the tile: " + Tlmain.getTitle(roll1));
                 System.out.println(Tlmain.getFlavourText(roll1));
                 System.out.println("You have gained " + Tlmain.getValue(roll1) + " points.");
@@ -46,7 +49,7 @@ public class main {
             System.out.println("it is " + navn2 + "'s turn, press enter to roll the dice");
             Input.enter();
             int roll2 = p2tur.tur();
-            System.out.println("You rolled " + roll2);
+            System.out.println(Language.YOU_ROLLED + roll2);
             System.out.println("You landed on the tile: " + Tlmain.getTitle(roll2));
             System.out.println(Tlmain.getFlavourText(roll2));
             System.out.println("You have gained " + Tlmain.getValue(roll2) + " points.");
@@ -57,7 +60,7 @@ public class main {
                 System.out.println(Langmain.extraturn());
                 Input.enter();
                 roll2 = p2tur.tur();
-                System.out.println("You rolled " + roll2);
+                System.out.println(Language.YOU_ROLLED + roll2);
                 System.out.println("You landed on the tile: " + Tlmain.getTitle(roll2));
                 System.out.println(Tlmain.getFlavourText(roll2));
                 System.out.println("You have gained " + Tlmain.getValue(roll2) + " points.");
@@ -78,4 +81,5 @@ public class main {
             System.out.println("you won with " + difference + " point");
         }
     }
+
 }
