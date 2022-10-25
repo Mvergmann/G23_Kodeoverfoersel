@@ -4,8 +4,6 @@ import TerningeSpil.Input;
 
 import java.util.Scanner;
 
-import static Feltspil.Language.and;
-
 public class main {
 
     public static final int STARTSALDO = 1000;
@@ -83,6 +81,5 @@ public class main {
             System.out.println(Language.You_Won_With() + difference + Language.Points());
         }
     }
-
 
 }
