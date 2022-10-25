@@ -8,8 +8,11 @@ public class TileList {
 
 
         public TileList() {
-            liste = new Tile[12];
-            liste[0] = new Tile("Guldmine", "Du finder guld!", 360);
+            Language lang = new Language();
+
+            liste = new Tile[11];
+            liste[0] = new Tile(lang.title2(), lang.spacetext2(), 360);
+
 
 
         }
