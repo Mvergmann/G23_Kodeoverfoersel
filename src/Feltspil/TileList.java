@@ -30,14 +30,30 @@ public class TileList {
 
         }
 
-        public int getValue(int i){
+    /**
+     * Getter method for the value, in index i of liste.
+     * @param i the index of liste[]
+     * @return the value of the tile stored in list[i]
+     */
+    public int getValue(int i){
             return liste[i].getValue();
         }
-        public String getTitle(int i){
-            return liste[i].getTitle();
 
-        }
-        public String getFlavourText(int i){
+    /**
+     * Getter method for the title, in index i of liste.
+      * @param i the index of liste[]
+     * @return the title of the tile stored in list[i]
+     */
+    public String getTitle(int i){
+            return liste[i].getTitle();
+    }
+
+    /**
+     * Getter for the flavour text in index i of liste.
+     * @param i the chosen index of liste[]
+     * @return the title of the tile stored in liste[i]
+     */
+    public String getFlavourText(int i){
             return liste[i].getFlavourText();
         }
 
