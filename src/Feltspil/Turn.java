@@ -3,11 +3,17 @@ package Feltspil;
 import TerningeSpil.Die;
 
 public class Turn {
+    /**
+     * Creates 2 die objects.
+     */
     TerningeSpil.Die die1 = new TerningeSpil.Die();
     TerningeSpil.Die die2 = new Die();
     int sum;
 
-
+    /**
+     * Rolls 2 die and saves them in the variable sum.
+     * @return sum, returns the sum of the roll.
+     */
 
     public int tur() {
         die1.roll();
@@ -19,16 +25,4 @@ public class Turn {
 
     }
 
-    public int getDie1Value() {
-
-
-        return die1.getFaceValue();
-
-    }
-    public int getDie2Value(){
-        return die2.getFaceValue();
-
-
-
-    }
 }
