@@ -1,6 +1,6 @@
 package Feltspil;
 
-public class Die //Enkelt terning
+public class Die // simple dice
 {
     /**
      * Makes sure the dice can not reach a higher value than 6.
