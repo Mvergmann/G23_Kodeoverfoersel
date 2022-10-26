@@ -4,13 +4,17 @@ public class Language {
 
     public static final String YOU_ROLLED = "You rolled ";
 
+    /**
+     * This constructor for the Language class allows other classes to great instances of the Language class
+     */
     public Language(){
 
     }
 
     /**
-     * System.out.println methods for the flavour text that is shown when a player lands on a certain space.
-     *
+     * The following lines of code contains String methods for title and flavour text for the various spaces in the game
+     * The idea is that these String objects can be refered to in the various System.out.println statements within other classes
+     * The purpose with this is that it is much easier to translate the game into other languages because the text is all contained in this one class
      */
 
     public static String title2(){
@@ -104,8 +108,7 @@ public class Language {
     }
 
     /**
-     * Game start text methods
-     *
+     * The following methods contain other Strings of text use throughout the game
      */
     public static String welcome(){
         String welcome = " Welcome to the game!";

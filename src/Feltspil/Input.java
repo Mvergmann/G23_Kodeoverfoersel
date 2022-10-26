@@ -3,6 +3,10 @@ package Feltspil;
 import java.util.Scanner;
 
 public class Input {
+    /**
+     * Method that creates a scanner and holds the next input from keyboard in the variable s.
+     * @return awaits an input from the user before the game can continue.
+     */
 
         public static String enter()
         {
@@ -11,18 +15,7 @@ public class Input {
             return s;
         }
 
-        public static String name()
-        {
-            Scanner in = new Scanner(System.in);
-            String name = in.nextLine();
-            return name;
-        }
-        public static int antalslag()
-        {
-            Scanner antal = new Scanner(System.in);
-            int testantal = antal.nextInt();
-            return testantal;
-        }
+
     }
 
 

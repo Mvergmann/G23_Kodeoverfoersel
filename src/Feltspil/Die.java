@@ -1,8 +1,11 @@
 package Feltspil;
 
-public class Die //Enkelt terning
+public class Die // simple dice
 {
-    private final int MAX = 6; //sikrer at terningen ikke kan opnå en højere værdi end 6.
+    /**
+     * Makes sure the dice can not reach a higher value than 6.
+     */
+    private final int MAX = 6;
 
     private int faceValue;
 
@@ -11,21 +14,32 @@ public class Die //Enkelt terning
         faceValue = 1;
     }
 
-    public int roll() { //terninge slag af en værdi fra 1-6.
+    /**
+     * The dice has a value of 1-6
+     * @return
+     */
+    public int roll() {
         faceValue = (int)(Math.random() * MAX) + 1;
 
         return faceValue;
     }
 
-    //funktion til at sætte terningens værdi til noget bestemt
+    /**
+     * This function allows us to put the dice value as something certain.
+     * @param value
+     */
     public void setFaceValue(int value)
     {
         faceValue = value;
     }
 
+    /**
+     *
+     * @return Returns the value of the dice
+     */
     public int getFaceValue(){
         return faceValue;
-    } //Henter terningens værdi efter den er slået.
+    }
 
     public String toString()
     {
