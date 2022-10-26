@@ -35,6 +35,7 @@ public class main {
         Then we add the amount to the players saldo and tell the player.
          */
         while (player1.GetSaldo() < 3000 && player2.GetSaldo() < 3000) {
+            System.out.println(" ");
             System.out.println(Language.It_Is() + navn1 + Language.S_Turn_Press_Enter_To_Roll_The_Dice());
             Input.enter();
             int roll1 = p1tur.tur(); //rolls the dices and get an sum of the two dices.
@@ -52,6 +53,7 @@ public class main {
             Then we add the amount to the players saldo and tell the player.
              */
             if (roll1 == 10) {
+                System.out.println(" ");
                 System.out.println(Langmain.extraturn());
                 Input.enter();
                 roll1 = p1tur.tur();
@@ -69,6 +71,7 @@ public class main {
             We tell the player what they have rolled, what tile they have hit, what it does, what they lose or get.
             Then we add the amount to the players saldo and tell the player.
              */
+            System.out.println(" ");
             System.out.println(Language.It_Is() + navn2 + Language.S_Turn_Press_Enter_To_Roll_The_Dice());
             Input.enter();
             int roll2 = p2tur.tur();
@@ -86,6 +89,7 @@ public class main {
             Then we add the amount to the players saldo and tell the player.
              */
             if (roll2 == 10) {
+                System.out.println(" ");
                 System.out.println(Langmain.extraturn());
                 Input.enter();
                 roll2 = p2tur.tur();
